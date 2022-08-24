@@ -1,6 +1,6 @@
 ```json
 {
-  "dirname": ":tier/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/",
+  "dirname": ":tier/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/photo/",
   "basename": "photo_name.jpg",
   "filename": "photo_name",
   "extension": "jpg",

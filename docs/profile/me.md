@@ -17,6 +17,4 @@ Returns logged-in user data.
 
 [_show.md](../_response/user/_show.md ':include')
 
-?> @TODO This endpoint should return profile picture either.
-
 <!-- tabs:end -->
