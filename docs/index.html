@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    request:after {
+      content:attr(type);
+      background: var(--theme-color,#42b983);
+      color: #ffffff;
+      display: inline-flex;
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      font-size:0.75rem;
+      font-weight: 600;
+      line-height: 100%;
+      margin-right: 1rem;
+      position: relative;
+      text-decoration:none !important;
+      text-transform: uppercase;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      request:after {background: var(--theme-color,#ea6f5a)}
+    }
+
+    request[type=get]:after, request[type=list]:after {
+      content: "GET";
+    }
+
+    request[type=show]:after {
+      content: "GET";
+      background: darkorange;
+    }
+
+    request[type=post]:after, request[type=create]:after,
+    request[type=grid-image-upload]:after, request[type=photo-upload]:after {
+      content: "POST";
+      background: indigo;
+    }
+
+    request[type=patch]:after, request[type=update]:after {
+      content: "PATCH";
+      background: darkviolet;
+    }
+
+    request[type=delete]:after {
+      content: "DELETE";
+      background: orangered;
+    }
+
+    h3 a span request:after {
+      padding: 0.20rem 0.30rem 0.2rem;
+      top:-3px;
+    }
+
+    li > request:after {
+      font-size: 0.80rem;
+      margin-right: 0.15rem;
+      padding: 0.20rem 0.25rem 0.12rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      request:after {background: var(--theme-color,#ea6f5a)}
+    }
+  </style>
+</head>
+<body>
+  <div data-app id="main">Please wait...</div>
+
+  <script>
+    window.$docsify = {
+      name: 'Vayes Prime',
+      repo: 'https://github.com/yahyaerturan/vayes-agency',
+      el: '#main',
+      loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md',
+      },
+      // loadNavbar: true,
+      coverpage: true,
+      tabs: {
+        persist    : false,      // default
+        sync       : false,      // default
+        theme      : 'material', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      },
+      pagination: {
+        // nextText: {
+        //  '/en/': 'NEXT',
+        //  '/': '下一章节'
+        // },
+        crossChapter: true,
+        crossChapterText: true,
+      },
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-yaml.min.js"></script>
+</body>
+</html>

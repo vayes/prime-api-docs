@@ -1,4 +1,4 @@
-# Prime API Documentation
+# VayesPrime API Documentation {docsify-ignore}
 
 An introductory documentation for Prime API.
 
